@@ -41,4 +41,22 @@
 
 <style scoped lang="scss">
 
+	#indexPage{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		#content{
+			max-width: 997px;
+			width: 100%;
+			padding: 53px;
+			background-color: $color-light-2;
+
+			.create_bucket_and_fruit{
+				
+				display: flex;
+			}
+		}
+	}
+
 </style>
