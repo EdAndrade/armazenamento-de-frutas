@@ -34,6 +34,7 @@ export default {
 	],
 
 	modules: [
+		'@nuxtjs/style-resources',
 	],
 
 	build: {
