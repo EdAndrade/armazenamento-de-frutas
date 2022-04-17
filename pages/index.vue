@@ -6,6 +6,7 @@
 
 			<div class="create_bucket_and_fruit">
 				<CreateBucket/>
+				<CreateFruit/>
 			</div>
 
 			<div class="fruits">
@@ -24,13 +25,15 @@
 <script>
 
 	import CreateBucket from '@/components/CreateBucket/index.vue'
+	import CreateFruit from '@/components/CreateFruit/index.vue'
 
 	export default {
 
 		name: 'IndexPage',
 
 		components: {
-			CreateBucket
+			CreateBucket,
+			CreateFruit
 		}
 	}
 
