@@ -4,17 +4,31 @@
 
 		<section id="content">
 
+			<div class="create_bucket_and_fruit">
+
+			</div>
+
+			<div class="fruits">
+
+			</div>
+
+			<div class="buckets">
+
+			</div>
+
 		</section>
 	</section>
 
 </template>
 
 <script>
-export default {
-  name: 'IndexPage'
-}
+
+	export default {
+		name: 'IndexPage'
+	}
+
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 </style>
