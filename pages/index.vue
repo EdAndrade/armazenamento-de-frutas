@@ -5,7 +5,7 @@
 		<section id="content">
 
 			<div class="create_bucket_and_fruit">
-
+				<CreateBucket/>
 			</div>
 
 			<div class="fruits">
@@ -23,8 +23,15 @@
 
 <script>
 
+	import CreateBucket from '@/components/CreateBucket/index.vue'
+
 	export default {
-		name: 'IndexPage'
+
+		name: 'IndexPage',
+
+		components: {
+			CreateBucket
+		}
 	}
 
 </script>
