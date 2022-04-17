@@ -18,6 +18,12 @@ export default {
 	css: [
 	],
 
+	styleResources: {
+		scss: [
+			'@/assets/style/_colors.scss',
+		],
+	},
+
 	plugins: [
 	],
 
