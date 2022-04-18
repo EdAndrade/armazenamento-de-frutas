@@ -10,7 +10,7 @@
 			</div>
 
 			<div class="fruits">
-				<Fruit v-for="(bucket, index) in buckets" :key="index"/>
+				<Fruit v-for="(bucket, index) in fruits" :key="index"/>
 			</div>
 
 			<div class="buckets">

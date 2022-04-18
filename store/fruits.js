@@ -11,6 +11,5 @@ export const mutations = {
             fruit_name,
             fruit_price
         })
-        state.fruit_id_track++
     }
 }
