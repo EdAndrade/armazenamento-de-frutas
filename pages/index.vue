@@ -91,6 +91,14 @@
 				margin-top: 21px;
 				display: flex;
 				gap: 20px;
+				flex-wrap: wrap;
+				max-height: 500px;
+				height: auto;
+				overflow: hidden;
+
+				&:hover{
+					overflow-y: scroll;
+				}
 			}
 		}
 	}
