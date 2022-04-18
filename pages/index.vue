@@ -14,7 +14,7 @@
 			</div>
 
 			<div class="buckets">
-				<Bucket v-for="(bucket, index) in buckets" :key="index"/>
+				<Bucket v-for="(bucket, index) in buckets" :bucket="bucket" :key="index"/>
 			</div>
 
 		</section>

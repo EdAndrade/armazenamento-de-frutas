@@ -5,7 +5,7 @@
         <div class="gross_bucket">
             <div class="top">
                 <p class="total">Total: 8.45</p>
-                <button class="remove">
+                <button class="remove" @click="removeBucket">
                     <img src="/trash-2.png" alt="">
                 </button>
             </div>
@@ -30,12 +30,5 @@
 
 </template>
 
-<script>
-
-    export default {
-
-    }
-
-</script>
-
+<script src="./script.js"></script>
 <style scoped lang="scss" src="./style.scss"></style>

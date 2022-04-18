@@ -14,7 +14,8 @@ export const mutations = {
         })
     },
 
-    REMOVE_BUCKET(state, bucket_id){
+    REMOVE_BUCKET(state, {bucket_id}){
+        console.log(bucket_id)
         state.buckets = state.buckets.filter( bucket => bucket.id !== bucket_id )
     },
 
