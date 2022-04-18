@@ -6,7 +6,7 @@
             <div class="top">
                 <p class="total">Total: 8.45</p>
                 <button class="remove">
-                    
+                    <img src="/trash-2.png" alt="">
                 </button>
             </div>
 

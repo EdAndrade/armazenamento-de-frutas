@@ -6,22 +6,36 @@
         background-color: $action-color-1;
         border-radius: 4px;
         padding: 14px;
+        position: relative;
 
         .top{
             display: flex;
             justify-content: space-between;
+            align-items: center;
             font-weight: 700;
+
+            .total{
+                color: $color-light-1;
+            }
+
+            button{
+                background-color: $action-color-1;
+            }
         }
 
         .fruits{
-            width: 100%;
+            width: calc( 100% - 28px );
+            position: absolute;
+            bottom: 0;
 
             .fruit{
+                width: 100%;
                 padding: 15px;
                 background-color: $color-light-1;
                 display: flex;
                 justify-content: space-between;
                 border-radius: 4px;
+                margin-bottom: 14px;
 
                 .fruitName{
                     font-weight: 700;
