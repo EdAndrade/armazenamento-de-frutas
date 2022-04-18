@@ -1,0 +1,25 @@
+.fruit{
+    width: 159px;
+    height: 77px;
+    border-radius: 4px;
+    background-color: $action-color-1;
+    display: flex;
+    align-items: center;
+
+    .description{
+
+        border-right: 1px solid $color-light-1;
+        color: $color-light-1;
+
+        .fruitName{
+            font-weight: 700;
+            line-height: 18.75px;
+        }
+
+        .fruitPrice{
+            font-size: .68em;
+            line-height: 13px;
+            margin-top: 6px;
+        }
+    }
+}
