@@ -3,8 +3,8 @@
     <section class="fruit">
 
         <div class="description">
-            <p class="fruitName"></p>
-            <p class="fruitPrice"></p>
+            <p class="fruitName">Fruta A</p>
+            <p class="fruitPrice">R$ 3.89</p>
         </div>
 
         <div class="addToABucket">

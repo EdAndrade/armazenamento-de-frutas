@@ -2,6 +2,7 @@
     width: 159px;
     height: 77px;
     border-radius: 4px;
+    padding: 19px;
     background-color: $action-color-1;
     display: flex;
     align-items: center;
@@ -10,6 +11,8 @@
 
         border-right: 1px solid $color-light-1;
         color: $color-light-1;
+        padding-right: 25px;
+        margin-right: 25px;
 
         .fruitName{
             font-weight: 700;
@@ -21,5 +24,16 @@
             line-height: 13px;
             margin-top: 6px;
         }
+    }
+
+    .addToABucket{
+        width: 18px;
+        height: 18px;
+        border: 2px solid $color-light-1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-light-1;
+        font-weight: bold;
     }
 }

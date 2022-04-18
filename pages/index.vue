@@ -10,7 +10,7 @@
 			</div>
 
 			<div class="fruits">
-				
+				<Fruit/>
 			</div>
 
 			<div class="buckets">
@@ -26,6 +26,7 @@
 
 	import CreateBucket from '@/components/CreateBucket/index.vue'
 	import CreateFruit from '@/components/CreateFruit/index.vue'
+	import Fruit from '@/components/Fruit/index.vue'
 
 	export default {
 
@@ -33,7 +34,8 @@
 
 		components: {
 			CreateBucket,
-			CreateFruit
+			CreateFruit,
+			Fruit
 		}
 	}
 
