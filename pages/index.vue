@@ -10,7 +10,7 @@
 			</div>
 
 			<div class="fruits">
-
+				
 			</div>
 
 			<div class="buckets">
@@ -55,6 +55,7 @@
 			.create_bucket_and_fruit{
 				
 				display: flex;
+				justify-content: space-between;
 			}
 		}
 	}
