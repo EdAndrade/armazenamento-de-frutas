@@ -3,8 +3,8 @@
     <section class="fruit">
 
         <div class="description">
-            <p class="fruitName">Fruta A</p>
-            <p class="fruitPrice">R$ 3.89</p>
+            <p class="fruitName">{{ fruit.fruit_name }}</p>
+            <p class="fruitPrice">R$ {{ fruit.fruit_price}}</p>
         </div>
 
         <div class="addToABucket">
@@ -15,12 +15,6 @@
 
 </template>
 
-<script>
-
-    export default {
-
-    }
-
-</script>
+<script src="./script.js"></script>
 
 <style scoped lang="scss" src="./style.scss"></style>
