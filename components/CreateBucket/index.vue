@@ -1,15 +1,32 @@
 <template>
-    <section class="modal-1">
+    <form @submit.prevent="createBucket()" class="modal-1">
         <h1>Criar balde</h1>
         <label for="capacityInput"></label>
-        <input type="text" id="capacityInput">
+        <input type="number" v-model.number="bucketCapacity" id="capacityInput">
         <button>Salvar</button>
-    </section>
+    </form >
 </template>
 
 <script>
+
     export default {
 
+        data(){
+            return {
+                bucketCapacity: 0
+            }
+        },
+
+        methods: {
+
+            createBucket(){
+                if(this.bucketCapacity <= 0){
+                    alert("A capacidade do balde deve ser maior que 0")
+                }else{
+                    this.$store.commit("buckets/CREATE_BUCKET", this.bucketCapacity)
+                }    
+            }
+        }
     }
 </script>
 
