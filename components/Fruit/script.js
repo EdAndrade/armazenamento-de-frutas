@@ -9,8 +9,16 @@ export default {
         }
     },
 
+    computed: {
+        
+        
+    },
+
     methods: {
 
-
+        floatPrice(price){
+            if(price)
+                return price.toFixed(2)
+        }
     }
 }

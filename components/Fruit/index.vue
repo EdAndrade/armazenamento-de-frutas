@@ -4,7 +4,7 @@
 
         <div class="description">
             <p class="fruitName">{{ fruit.fruit_name }}</p>
-            <p class="fruitPrice">R$ {{ fruit.fruit_price}}</p>
+            <p class="fruitPrice">R$ {{ floatPrice(fruit.fruit_price) }}</p>
         </div>
 
         <div class="addToABucket">
