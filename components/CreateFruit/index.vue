@@ -37,7 +37,7 @@
 
             cleanFields(){
                 this.fruit.fruit_name = ''
-                this.fruit_price = 0
+                this.fruit.fruit_price = 0
             }
         }
     }
