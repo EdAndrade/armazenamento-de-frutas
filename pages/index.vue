@@ -16,9 +16,7 @@
 			</div>
 
 			<div class="buckets">
-				<Bucket/>
-				<Bucket/>
-				<Bucket/>
+				<Bucket v-for="(bucket, index) in buckets" :key="index"/>
 			</div>
 
 		</section>
@@ -32,6 +30,7 @@
 	import CreateFruit from '@/components/CreateFruit/index.vue'
 	import Fruit from '@/components/Fruit/index.vue'
 	import Bucket from '@/components/Bucket/index.vue'
+	import { mapState } from 'vuex'
 
 	export default {
 
@@ -42,6 +41,15 @@
 			CreateFruit,
 			Fruit,
 			Bucket
+		},
+
+		computed: {
+
+			...mapState({
+				buckets: state => state.buckets.buckets
+			})
+
+
 		}
 	}
 
