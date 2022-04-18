@@ -11,6 +11,8 @@
 
 			<div class="fruits">
 				<Fruit/>
+				<Fruit/>
+				<Fruit/>
 			</div>
 
 			<div class="buckets">
@@ -58,6 +60,15 @@
 				
 				display: flex;
 				justify-content: space-between;
+			}
+
+			.fruits{
+				margin-top: 21px;
+				display: flex;
+				
+				.fruit{
+					margin-right: 23px;
+				}
 			}
 		}
 	}
