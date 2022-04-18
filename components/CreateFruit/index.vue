@@ -1,18 +1,41 @@
 <template>
-    <section class="modal-1">
+    <form @submit.prevent="createFruit()" class="modal-1">
         <h1>Criar Fruta</h1>
         <label for="name">Nome</label>
-        <input type="text" id="name">
+        <input type="text" v-model="fruit.fruit_name" id="name">
         <label for="price">Preço</label>
-        <input type="text" id="price">
+        <input type="number" v-model.number="fruit.fruit_price" id="price">
         <button>Salvar</button>
-    </section>
+    </form>
 </template>
 
 <script>
+
     export default {
 
+        data(){
+
+            return {
+
+                fruit: {
+                    fruit_name: '',
+                    fruit_price: 0
+                }
+            }
+        },
+
+        methods: {
+
+            createFruit(){
+                if(this.fruit.fruit_name === '' || this.fruit.fruit_price <= 0){
+                    alert('O campo nome deve estar preenchido\nO preço da fruta não pode ser maior que 0')
+                }else{
+                    this.$store.commit('fruits/CREATE_FRUIT', this.fruit)
+                }
+            }
+        }
     }
+
 </script>
 
 <style>
