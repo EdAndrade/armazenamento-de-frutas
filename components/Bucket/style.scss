@@ -4,6 +4,8 @@
         width: 173px;
         height: 253px;
         background-color: $action-color-1;
+        border-radius: 4px;
+        padding: 14px;
 
         .top{
             display: flex;
@@ -13,17 +15,21 @@
 
         .fruits{
             width: 100%;
-            padding: 15px;
-            background-color: $color-light-1;
-            display: flex;
-            justify-content: space-between;
 
-            .fruitName{
-                font-weight: 700;
-            }
+            .fruit{
+                padding: 15px;
+                background-color: $color-light-1;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 4px;
 
-            .fruitPrice{
-                font-size: .87em;
+                .fruitName{
+                    font-weight: 700;
+                }
+    
+                .fruitPrice{
+                    font-size: .87em;
+                }
             }
         }
     }

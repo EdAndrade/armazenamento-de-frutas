@@ -16,7 +16,9 @@
 			</div>
 
 			<div class="buckets">
-
+				<Bucket/>
+				<Bucket/>
+				<Bucket/>
 			</div>
 
 		</section>
@@ -29,6 +31,7 @@
 	import CreateBucket from '@/components/CreateBucket/index.vue'
 	import CreateFruit from '@/components/CreateFruit/index.vue'
 	import Fruit from '@/components/Fruit/index.vue'
+	import Bucket from '@/components/Bucket/index.vue'
 
 	export default {
 
@@ -37,7 +40,8 @@
 		components: {
 			CreateBucket,
 			CreateFruit,
-			Fruit
+			Fruit,
+			Bucket
 		}
 	}
 
@@ -77,6 +81,8 @@
 				background-color: $background-color-1;
 				padding: 29px;
 				margin-top: 21px;
+				display: flex;
+				gap: 20px;
 			}
 		}
 	}
