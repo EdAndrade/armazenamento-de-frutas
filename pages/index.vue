@@ -70,6 +70,14 @@
 					margin-right: 23px;
 				}
 			}
+
+			.buckets{
+				width: 100%;
+				border-radius: 8px;
+				background-color: $background-color-1;
+				padding: 29px;
+				margin-top: 21px;
+			}
 		}
 	}
 
