@@ -10,9 +10,7 @@
 			</div>
 
 			<div class="fruits">
-				<Fruit/>
-				<Fruit/>
-				<Fruit/>
+				<Fruit v-for="(bucket, index) in buckets" :key="index"/>
 			</div>
 
 			<div class="buckets">
@@ -46,7 +44,8 @@
 		computed: {
 
 			...mapState({
-				buckets: state => state.buckets.buckets
+				buckets: state => state.buckets.buckets,
+				fruits: state => state.fruits.fruits
 			})
 
 
