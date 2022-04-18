@@ -1,0 +1,30 @@
+.bucket{
+
+    .gross_bucket{
+        width: 173px;
+        height: 253px;
+        background-color: $action-color-1;
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+        }
+
+        .fruits{
+            width: 100%;
+            padding: 15px;
+            background-color: $color-light-1;
+            display: flex;
+            justify-content: space-between;
+
+            .fruitName{
+                font-weight: 700;
+            }
+
+            .fruitPrice{
+                font-size: .87em;
+            }
+        }
+    }
+}
