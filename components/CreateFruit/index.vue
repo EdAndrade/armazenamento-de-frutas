@@ -28,7 +28,7 @@
 
             createFruit(){
                 if(this.fruit.fruit_name === '' || this.fruit.fruit_price <= 0){
-                    alert('O campo nome deve estar preenchido\nO preço da fruta não pode ser maior que 0')
+                    alert('O campo nome deve estar preenchido\nO preço da fruta não pode ser menor que 0')
                 }else{
                     this.$store.commit('fruits/CREATE_FRUIT', this.fruit)
                     this.cleanFields()
