@@ -44,12 +44,23 @@
                 border-radius: 4px;
                 margin-bottom: 14px;
 
+                &:hover{
+                    .fruitActions{
+                        display: flex;
+                    }
+                }
+
                 .fruitName{
                     font-weight: 700;
                 }
     
                 .fruitPrice{
                     font-size: .87em;
+                }
+
+                .fruitActions{
+                    display: none;
+                    align-items: center;
                 }
             }
         }

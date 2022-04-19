@@ -14,6 +14,15 @@
                 <div class="fruit" v-for="(fruit, index) in bucket.fruits" :key="index">
                     <p class="fruitName">{{ fruit.fruit_name }}</p>
                     <p class="fruitPrice">{{ formatPrice(fruit.fruit_price) }}</p>
+
+                    <div class="fruitActions">
+                        <div class="addFruit">
+                            +
+                        </div>
+                        <div class="removeFruit">
+                            <img src="/trash-2.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
