@@ -44,6 +44,7 @@
                 border-radius: 4px;
                 margin-bottom: 14px;
                 position: relative;
+                flex-wrap: nowrap;
 
                 &:hover{
                     .fruitActions{
@@ -53,10 +54,12 @@
 
                 .fruitName{
                     font-weight: 700;
+                    white-space: nowrap;
                 }
     
                 .fruitPrice{
                     font-size: .87em;
+                    white-space: nowrap;
                 }
 
                 .fruitActions{
