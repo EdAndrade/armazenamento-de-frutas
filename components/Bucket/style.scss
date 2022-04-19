@@ -43,6 +43,7 @@
                 align-items: center;
                 border-radius: 4px;
                 margin-bottom: 14px;
+                position: relative;
 
                 &:hover{
                     .fruitActions{
@@ -59,8 +60,22 @@
                 }
 
                 .fruitActions{
+                    width: 50%;
+                    height: 100%;
+                    background-color: $background-color-1;
                     display: none;
                     align-items: center;
+                    position: absolute;
+                    right: 0;
+                    justify-content: space-around;
+
+                    .removeFruit{
+                        margin-top: -2px;
+                    }
+
+                    .removeFruit, .addFruit{
+                        cursor: pointer;
+                    }
                 }
             }
         }

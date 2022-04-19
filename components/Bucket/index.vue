@@ -17,10 +17,10 @@
 
                     <div class="fruitActions">
                         <div class="addFruit">
-                            +
+                            <img src="/plus-square.png" alt="">
                         </div>
                         <div class="removeFruit">
-                            <img src="/trash-2.png" alt="">
+                            <img src="/trash-3.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
         </div>
 
         <p class="capacity">
-            {{ getCapacity() }}%
+            Capacidade: {{ getCapacity() }}%
         </p>
     </section>
 
