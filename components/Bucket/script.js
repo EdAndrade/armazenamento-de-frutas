@@ -22,10 +22,10 @@ export default {
         getTotal(){
             if(this.bucket.fruits.length > 0){
 
-                return this.bucket.fruits.reduce( (fruit, sum) => {
-                    console.log(sum, fruit)
+                return this.bucket.fruits.reduce( (sum, fruit) => {
+                    console.log(fruit.fruit_price)
                     return sum+fruit.fruit_price
-                })
+                }, 0)
 
             }else{
                 return 0
