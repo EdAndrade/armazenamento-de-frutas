@@ -60,6 +60,7 @@
         overflow: hidden;
         justify-content: space-between;
         display: none;
+        z-index: 909;
 
         .bucket{
             background-color: $color-light-2;
