@@ -74,15 +74,12 @@
 			}
 
 			.fruits{
-				margin-top: 21px;
+				margin-top: 11px;
 				display: flex;
-				overflow: hidden;
-
-				&:hover{
-					overflow-x: scroll;
-				}
+				flex-wrap: wrap;
 				
 				.fruit{
+					margin-top: 10px;
 					margin-right: 23px;
 				}
 			}
