@@ -26,7 +26,6 @@ export default {
         },
 
         addFruitToBucket(bucket_id){
-            console.log(bucket_id, this.fruit)
             this.$store.commit('buckets/ADD_FRUIT_TO_BUCKET', {
                 bucket_id,
                 ...this.fruit

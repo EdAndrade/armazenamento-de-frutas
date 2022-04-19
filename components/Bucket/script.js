@@ -23,6 +23,7 @@ export default {
             if(this.bucket.fruits.length > 0){
 
                 return this.bucket.fruits.reduce( (fruit, sum) => {
+                    console.log(sum, fruit)
                     return sum+fruit.fruit_price
                 })
 
