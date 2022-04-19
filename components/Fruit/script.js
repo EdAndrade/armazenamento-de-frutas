@@ -23,6 +23,14 @@ export default {
         floatPrice(price){
             if(price)
                 return price.toFixed(2)
+        },
+
+        addFruitToBucket(bucket_id){
+            console.log(bucket_id, this.fruit)
+            this.$store.commit('buckets/ADD_FRUIT_TO_BUCKET', {
+                bucket_id,
+                ...this.fruit
+            })
         }
     }
 }

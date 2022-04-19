@@ -12,8 +12,8 @@
         </div>
 
         <div class="selectBucket">
-            <div class="bucket" v-for="(bucket, index) in buckets" :key="index">
-                Balde {{ index }}
+            <div class="bucket" v-for="(bucket, index) in buckets" :key="index" @click="addFruitToBucket(bucket.id)">
+                Balde {{ index+1 }}
             </div>
         </div>
 
