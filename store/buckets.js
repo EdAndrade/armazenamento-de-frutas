@@ -23,6 +23,9 @@ export const mutations = {
             if(bucket.id === bucket_id)
                 bucket.fruits.push({ fruit_name, fruit_price })
         })
+        state.buckets.sort( (a, b) => {
+            return (( b.fruits.length/b.bucket_capacity ) - ( a.fruits.length/a.bucket_capacity ))
+        })
     },
 
     REMOVE_FRUIT_FROM_BUCKET(state, { bucket_id, fruit_name_to_remove }){
