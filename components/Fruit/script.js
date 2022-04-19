@@ -1,4 +1,4 @@
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
 export default {
 
@@ -20,6 +20,10 @@ export default {
 
     methods: {
 
+        ...mapActions({
+            addFruitToBucketAndSortBuckets: 'buckets/addFruitToBucketAndSortBuckets'
+        }),
+
         floatPrice(price){
             if(price)
                 return price.toFixed(2)
@@ -28,7 +32,7 @@ export default {
         addFruitToBucket(bucket){
 
             if((bucket.fruits.length/bucket.bucket_capacity) < 1){
-                this.$store.commit('buckets/ADD_FRUIT_TO_BUCKET', {
+                this.addFruitToBucketAndSortBuckets({
                     bucket_id: bucket.id,
                     ...this.fruit
                 })
