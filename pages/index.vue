@@ -102,4 +102,17 @@
 		}
 	}
 
+	@media screen and ( max-width: 600px ){
+
+		#indexPage{
+
+			#content{
+
+				.create_bucket_and_fruit{
+					flex-flow: column;
+				}
+			}
+		}
+	}
+
 </style>
