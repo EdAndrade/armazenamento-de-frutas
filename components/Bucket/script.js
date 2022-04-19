@@ -1,3 +1,5 @@
+import { mapActions } from 'vuex'
+
 export default {
 
     props: {
@@ -10,6 +12,10 @@ export default {
     },
 
     methods: {
+
+        ...mapActions({
+            addFruitToBucketAndSortBuckets: 'buckets/addFruitToBucketAndSortBuckets'
+        }),
 
         removeBucket(){
             if(this.bucket.fruits.length > 0){
@@ -50,7 +56,7 @@ export default {
         addFruitInBucket(fruit){
 
             if((this.bucket.fruits.length/this.bucket.bucket_capacity) < 1){
-                this.$store.commit('buckets/ADD_FRUIT_TO_BUCKET', {
+                this.addFruitToBucketAndSortBuckets({
                     bucket_id: this.bucket.id,
                     ...fruit
                 })
