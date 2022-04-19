@@ -23,9 +23,6 @@ export const mutations = {
             if(bucket.id === bucket_id)
                 bucket.fruits.push({ fruit_name, fruit_price })
         })
-        state.buckets.sort( (a, b) => {
-            return (( b.fruits.length/b.bucket_capacity ) - ( a.fruits.length/a.bucket_capacity ))
-        })
     },
 
     REMOVE_FRUIT_FROM_BUCKET(state, { bucket_id, fruit_name_to_remove }){
@@ -45,5 +42,24 @@ export const mutations = {
                 })
             }
         }
+    },
+
+    SORT_BUCKET(state){
+        state.buckets.sort( (a, b) => {
+            return (( b.fruits.length/b.bucket_capacity ) - ( a.fruits.length/a.bucket_capacity ))
+        })
+    }
+}
+
+export const actions = {
+
+    addFruitToBucketAndSortBuckets( { commit }, { bucket_id, fruit_name, fruit_price }){
+        commit('ADD_FRUIT_TO_BUCKET', { bucket_id, fruit_name, fruit_price })
+        commit('SORT_BUCKET')
+    },
+
+    removeFruitFromBucketAndSortBuckets({ commit }, { bucket_id, fruit_name_to_remove }){
+        commit('REMOVE_FRUIT_FROM_BUCKET', { bucket_id, fruit_name_to_remove })
+        commit('SORT_BUCKET')
     }
 }
