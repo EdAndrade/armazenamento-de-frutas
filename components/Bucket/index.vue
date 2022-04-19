@@ -11,14 +11,8 @@
             </div>
 
             <div class="fruits">
-                <div class="fruit">
-                    <p class="fruitName">Fruta A</p>
-                    <p class="fruitPrice">R$ 3.90</p>
-                </div>
-
-                <div class="fruit">
-                    <p class="fruitName">Fruta A</p>
-                    <p class="fruitPrice">R$ 3.90</p>
+                <div class="fruit" v-for="(fruit, index) in bucket.fruits" :key="index">
+                    {{fruit}}
                 </div>
             </div>
         </div>
