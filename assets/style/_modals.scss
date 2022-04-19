@@ -36,3 +36,9 @@
         margin-top: 26px;
     }
 }
+
+@media screen and ( max-width: 1000px ){
+    .modal-1{
+        width: calc( 50% - 15px);
+    }
+}
