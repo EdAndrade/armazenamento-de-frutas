@@ -16,7 +16,7 @@
                     <p class="fruitPrice">{{ formatPrice(fruit.fruit_price) }}</p>
 
                     <div class="fruitActions">
-                        <div class="addFruit">
+                        <div class="addFruit" @click="addFruitInBucket(fruit)">
                             <img src="/plus-square.png" alt="">
                         </div>
                         <div class="removeFruit" @click="removeFruitFromBucket(fruit.fruit_name)">

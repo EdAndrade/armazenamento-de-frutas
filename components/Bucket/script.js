@@ -45,6 +45,18 @@ export default {
                 bucket_id: this.bucket.id,
                 fruit_name_to_remove 
             })
+        },
+
+        addFruitInBucket(fruit){
+
+            if((this.bucket.fruits.length/this.bucket.bucket_capacity) < 1){
+                this.$store.commit('buckets/ADD_FRUIT_TO_BUCKET', {
+                    bucket_id: this.bucket.id,
+                    ...fruit
+                })
+            }else{
+                alert("O balde em questão já atingiu a sua capacidade maxima!")
+            }
         }
     }
 }
