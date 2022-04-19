@@ -28,7 +28,11 @@
             max-height: 189px;
             position: absolute;
             bottom: 0;
-            overflow-y: scroll;
+            overflow: hidden;
+
+            &:hover{
+                overflow-y: scroll;
+            }
 
             .fruit{
                 width: 100%;
