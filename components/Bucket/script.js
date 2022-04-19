@@ -12,7 +12,11 @@ export default {
     methods: {
 
         removeBucket(){
-            this.$store.commit('buckets/REMOVE_BUCKET', {bucket_id: this.bucket.id})
+            if(this.bucket.fruits.length > 0){
+                alert("O balde precisa estar vazio para ser eliminado!")
+            }else{
+                this.$store.commit('buckets/REMOVE_BUCKET', {bucket_id: this.bucket.id})
+            }
         },
 
         getTotal(){
@@ -21,7 +25,7 @@ export default {
                 return this.bucket.fruits.reduce( (fruit, sum) => {
                     return sum+fruit.fruit_price
                 })
-                
+
             }else{
                 return 0
             }
