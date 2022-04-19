@@ -11,6 +11,12 @@
             +
         </div>
 
+        <div class="selectBucket">
+            <div class="bucket" v-for="(bucket, index) in buckets" :key="index">
+                Balde {{ index }}
+            </div>
+        </div>
+
     </section>
 
 </template>

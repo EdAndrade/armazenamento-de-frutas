@@ -1,3 +1,5 @@
+import { mapState } from 'vuex'
+
 export default {
 
     props: {
@@ -11,7 +13,9 @@ export default {
 
     computed: {
         
-        
+        ...mapState({
+            buckets: state => state.buckets.buckets
+        })
     },
 
     methods: {
