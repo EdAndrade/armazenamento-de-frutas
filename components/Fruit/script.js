@@ -25,11 +25,16 @@ export default {
                 return price.toFixed(2)
         },
 
-        addFruitToBucket(bucket_id){
-            this.$store.commit('buckets/ADD_FRUIT_TO_BUCKET', {
-                bucket_id,
-                ...this.fruit
-            })
+        addFruitToBucket(bucket){
+
+            if((bucket.fruits.length/bucket.bucket_capacity) < 1){
+                this.$store.commit('buckets/ADD_FRUIT_TO_BUCKET', {
+                    bucket_id: bucket.id,
+                    ...this.fruit
+                })
+            }else{
+                alert("O balde em questão já atingiu a sua capacidade maxima!")
+            }
         }
     }
 }
