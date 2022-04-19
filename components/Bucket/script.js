@@ -29,6 +29,10 @@ export default {
             }else{
                 return 0
             }
+        },
+
+        formatPrice(fruit_price){
+            return `R$ ${fruit_price.toFixed(2)}`
         }
     }
 }

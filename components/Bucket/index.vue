@@ -12,7 +12,8 @@
 
             <div class="fruits">
                 <div class="fruit" v-for="(fruit, index) in bucket.fruits" :key="index">
-                    {{fruit}}
+                    <p class="fruitName">{{ fruit.fruit_name }}</p>
+                    <p class="fruitPrice">{{ formatPrice(fruit.fruit_price) }}</p>
                 </div>
             </div>
         </div>
