@@ -1,7 +1,7 @@
 <template>
     <form @submit.prevent="createBucket()" class="modal-1">
         <h1>Criar balde</h1>
-        <label for="capacityInput"></label>
+        <label for="capacityInput">Capacidade</label>
         <input type="number" v-model.number="bucketCapacity" id="capacityInput">
         <button>Salvar</button>
     </form >
