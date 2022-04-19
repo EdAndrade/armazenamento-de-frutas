@@ -14,7 +14,8 @@ export default {
     methods: {
 
         ...mapActions({
-            addFruitToBucketAndSortBuckets: 'buckets/addFruitToBucketAndSortBuckets'
+            addFruitToBucketAndSortBuckets: 'buckets/addFruitToBucketAndSortBuckets',
+            removeFruitFromBucketAndSortBuckets: 'buckets/removeFruitFromBucketAndSortBuckets'
         }),
 
         removeBucket(){
@@ -47,7 +48,7 @@ export default {
         },
 
         removeFruitFromBucket(fruit_name_to_remove){
-            this.$store.commit('buckets/REMOVE_FRUIT_FROM_BUCKET', { 
+            this.removeFruitFromBucketAndSortBuckets({ 
                 bucket_id: this.bucket.id,
                 fruit_name_to_remove 
             })
