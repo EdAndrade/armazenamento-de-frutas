@@ -44,7 +44,7 @@ export default {
         },
 
         getCapacity(){
-            return ( this.bucket.fruits.length/this.bucket.bucket_capacity ) * 100;
+            return (( this.bucket.fruits.length/this.bucket.bucket_capacity ) * 100).toFixed(2);
         },
 
         removeFruitFromBucket(fruit_name_to_remove){
