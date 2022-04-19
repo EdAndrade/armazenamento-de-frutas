@@ -76,6 +76,11 @@
 			.fruits{
 				margin-top: 21px;
 				display: flex;
+				overflow: hidden;
+
+				&:hover{
+					overflow-x: scroll;
+				}
 				
 				.fruit{
 					margin-right: 23px;
