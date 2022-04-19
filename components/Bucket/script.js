@@ -34,6 +34,10 @@ export default {
 
         formatPrice(fruit_price){
             return `R$ ${fruit_price.toFixed(2)}`
+        },
+
+        getCapacity(){
+            return ( this.bucket.fruits.length/this.bucket.bucket_capacity ) * 100;
         }
     }
 }

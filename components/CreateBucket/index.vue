@@ -23,7 +23,7 @@
                 if(this.bucketCapacity <= 0){
                     alert("A capacidade do balde deve ser maior que 0")
                 }else{
-                    this.$store.commit("buckets/CREATE_BUCKET", this.bucketCapacity)
+                    this.$store.commit("buckets/CREATE_BUCKET",  { bucket_capacity: this.bucketCapacity })
                 }    
             }
         }

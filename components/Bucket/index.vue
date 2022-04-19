@@ -19,7 +19,7 @@
         </div>
 
         <p class="capacity">
-            Capacidade 50%
+            {{ getCapacity() }}%
         </p>
     </section>
 

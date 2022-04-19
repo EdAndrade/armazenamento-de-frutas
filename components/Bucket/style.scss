@@ -25,8 +25,10 @@
 
         .fruits{
             width: calc( 100% - 28px );
+            max-height: 189px;
             position: absolute;
             bottom: 0;
+            overflow-y: scroll;
 
             .fruit{
                 width: 100%;

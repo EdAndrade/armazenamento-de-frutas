@@ -2,7 +2,7 @@
     <form @submit.prevent="createFruit()" class="modal-1">
         <h1>Criar Fruta</h1>
         <label for="name">Nome</label>
-        <input type="text" v-model="fruit.fruit_name" id="name">
+        <input type="text" v-model="fruit.fruit_name" id="name" step="0.01">
         <label for="price">Preço</label>
         <input type="number" v-model.number="fruit.fruit_price" id="price">
         <button>Salvar</button>
