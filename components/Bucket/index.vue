@@ -19,7 +19,7 @@
                         <div class="addFruit">
                             <img src="/plus-square.png" alt="">
                         </div>
-                        <div class="removeFruit">
+                        <div class="removeFruit" @click="removeFruitFromBucket(fruit.fruit_name)">
                             <img src="/trash-3.png" alt="">
                         </div>
                     </div>

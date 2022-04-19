@@ -33,9 +33,12 @@ export const mutations = {
             if(fruitRemoved)
                 break
             if(bucket_id === state.buckets[i].id){
+                console.log(bucket_id, state.buckets[i].id)
                 state.buckets[i].fruits = state.buckets[i].fruits.filter( fruit => {
-                    if( fruitRemoved && fruit.fruit_name === fruit_name_to_remove )
+                    if( ( fruitRemoved === false ) && fruit.fruit_name === fruit_name_to_remove ){
+                        fruitRemoved = true
                         return false
+                    }
                     return true
                 })
             }

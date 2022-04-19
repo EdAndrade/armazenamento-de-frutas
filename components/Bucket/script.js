@@ -38,6 +38,13 @@ export default {
 
         getCapacity(){
             return ( this.bucket.fruits.length/this.bucket.bucket_capacity ) * 100;
+        },
+
+        removeFruitFromBucket(fruit_name_to_remove){
+            this.$store.commit('buckets/REMOVE_FRUIT_FROM_BUCKET', { 
+                bucket_id: this.bucket.id,
+                fruit_name_to_remove 
+            })
         }
     }
 }
