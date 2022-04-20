@@ -8,7 +8,7 @@
         </div>
 
         <div class="addToABucket">
-            <img src="/plus-square2.png" alt="">
+            <img src="~assets/images/plus-square2.png" alt="">
         </div>
 
         <div class="selectBucket">

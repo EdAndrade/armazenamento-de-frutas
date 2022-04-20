@@ -6,7 +6,7 @@
             <div class="top">
                 <p class="total">Total: {{ getTotal() }} R$</p>
                 <button class="remove" @click="removeBucket">
-                    <img src="/trash-2.png" alt="">
+                    <img src="~assets/images/trash-2.png" alt="">
                 </button>
             </div>
 
@@ -17,10 +17,10 @@
 
                     <div class="fruitActions">
                         <div class="addFruit" @click="addFruitInBucket(fruit)">
-                            <img src="/plus-square.png" alt="">
+                            <img src="~assets/images/plus-square.png" alt="">
                         </div>
                         <div class="removeFruit" @click="removeFruitFromBucket(fruit.fruit_name)">
-                            <img src="/trash-3.png" alt="">
+                            <img src="~assets/images/trash-3.png" alt="">
                         </div>
                     </div>
                 </div>
