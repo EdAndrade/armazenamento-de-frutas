@@ -12,5 +12,9 @@ export const mutations = {
             fruit_price
         })
         state.fruit_id_track++
+    },
+
+    REMOVE_FRUIT(state, { fruit_id}){
+        state.fruits = state.fruits.filter( fruit => fruit.id !== fruit_id )
     }
 }
