@@ -36,6 +36,7 @@ export default {
                     bucket_id: bucket.id,
                     ...this.fruit
                 })
+                this.$store.commit('fruits/REMOVE_FRUIT', { fruit_id: this.fruit.id })
             }else{
                 alert("O balde em questão já atingiu a sua capacidade maxima!")
             }
