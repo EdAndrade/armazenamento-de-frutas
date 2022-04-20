@@ -1,5 +1,5 @@
 <p align="center">
-   # Armazenamto de frutas - Desafio
+# Armazenamto de frutas - Desafio
 </p>
 
 <p align="center">
@@ -39,9 +39,5 @@ $ yarn
 $ yarn dev
 ```
 Acesse apartir do browser http://localhost:3000/ .
-
-# :bug: Issues
-
-Create a <a href="https://github.com/LeonneBrito/dt.money/issues">new issue report</a>, it will be an honor to be able to help you solve and further improve our application.
 
 Obrigado! 💖
