@@ -6,12 +6,12 @@ export const state = () => ({
 export const mutations = {
 
     CREATE_BUCKET(state, { bucket_capacity }){
-        state.bucket_id_track++
         state.buckets.push({
             id: state.bucket_id_track,
             bucket_capacity,
             fruits: []
         })
+        state.bucket_id_track++
     },
 
     REMOVE_BUCKET(state, {bucket_id}){
