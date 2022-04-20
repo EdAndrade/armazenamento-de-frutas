@@ -1,5 +1,5 @@
 <p align="center">
-   #Armazenamto de frutas - Desafio
+   # Armazenamto de frutas - Desafio
 </p>
 
 <p align="center">
