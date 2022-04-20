@@ -4,7 +4,7 @@
 
         <div class="gross_bucket">
             <div class="top">
-                <p class="total">Total: {{ getTotal() }}</p>
+                <p class="total">Total: {{ getTotal() }} R$</p>
                 <button class="remove" @click="removeBucket">
                     <img src="/trash-2.png" alt="">
                 </button>
