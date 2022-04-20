@@ -3,7 +3,7 @@ export default {
 	head: {
 		title: 'fruit-storage',
 		htmlAttrs: {
-			lang: 'en'
+			lang: 'pt'
 		},
 		meta: [
 			{ charset: 'utf-8' },
