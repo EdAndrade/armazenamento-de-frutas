@@ -12,11 +12,6 @@ Armazenamto de frutas - Desafio
   </sub>
 </div>
 
-# 📌 Contents
-
-* ## Tecnologias
-* ## Como executar
-
 ## :rocket: Tecnologias
 As seguintes tecnologias foram usadas:
 
